@@ -1,4 +1,4 @@
-const myIterable = { from: '12', to: 100 };
+const myIterable = { from: 12, to: 100 };
 
 function isValid(from, to) {
   if (typeof from !== 'number' || typeof to !== 'number') {
@@ -33,6 +33,6 @@ myIterable[Symbol.iterator] = function () {
   };
 };
 
-for (let num of myIterable) {
-  console.log(num);
-}
+/* for (let num of myIterable) {
+   console.log(num);
+}*/
